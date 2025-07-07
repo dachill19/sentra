@@ -126,13 +126,13 @@ const Navbar: React.FC<NavbarProps> = ({ language, onLanguageChange }) => {
 
                         {/* Auth Buttons */}
                         <Link
-                            href="/auth/login"
+                            href="/auth"
                             className="text-gray-700 hover:text-[#e43827] transition-colors font-medium"
                         >
                             {t.login}
                         </Link>
                         <Link
-                            href="/auth/login"
+                            href="/auth"
                             className="bg-[#e43827] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ea6254] transition-colors"
                         >
                             {t.demo}
@@ -219,13 +219,13 @@ const Navbar: React.FC<NavbarProps> = ({ language, onLanguageChange }) => {
 
                             {/* Auth Buttons Mobile */}
                             <Link
-                                href="/auth/login"
+                                href="/auth"
                                 className="text-gray-700 hover:text-[#e43827] transition-colors font-medium text-left"
                             >
                                 {t.login}
                             </Link>
                             <Link
-                                href="/auth/login"
+                                href="/auth"
                                 className="bg-[#e43827] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ea6254] transition-colors w-full"
                             >
                                 {t.demo}
