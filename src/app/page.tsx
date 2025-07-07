@@ -84,7 +84,6 @@ export default function Home() {
             <Navbar
                 language={language}
                 onLanguageChange={handleLanguageChange}
-                onShowAuth={showAuth}
             />
             <HeroSection language={language} />
             <ProblemSection language={language} />

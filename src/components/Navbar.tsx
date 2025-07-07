@@ -8,14 +8,9 @@ import { Menu, X, Globe } from "lucide-react";
 interface NavbarProps {
     language: "id" | "en";
     onLanguageChange: (lang: "id" | "en") => void;
-    onShowAuth?: (mode: "login" | "signup") => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-    language,
-    onLanguageChange,
-    onShowAuth,
-}) => {
+const Navbar: React.FC<NavbarProps> = ({ language, onLanguageChange }) => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const content = {
@@ -130,22 +125,18 @@ const Navbar: React.FC<NavbarProps> = ({
                         </div>
 
                         {/* Auth Buttons */}
-                        {onShowAuth && (
-                            <>
-                                <button
-                                    onClick={() => onShowAuth("login")}
-                                    className="text-gray-700 hover:text-[#e43827] transition-colors font-medium"
-                                >
-                                    {t.login}
-                                </button>
-                                <button
-                                    onClick={() => onShowAuth("login")}
-                                    className="bg-[#e43827] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ea6254] transition-colors"
-                                >
-                                    {t.demo}
-                                </button>
-                            </>
-                        )}
+                        <Link
+                            href="/auth/login"
+                            className="text-gray-700 hover:text-[#e43827] transition-colors font-medium"
+                        >
+                            {t.login}
+                        </Link>
+                        <Link
+                            href="/auth/login"
+                            className="bg-[#e43827] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ea6254] transition-colors"
+                        >
+                            {t.demo}
+                        </Link>
                     </div>
 
                     {/* Mobile menu button */}
@@ -227,22 +218,18 @@ const Navbar: React.FC<NavbarProps> = ({
                             </div>
 
                             {/* Auth Buttons Mobile */}
-                            {onShowAuth && (
-                                <>
-                                    <button
-                                        onClick={() => onShowAuth("login")}
-                                        className="text-gray-700 hover:text-[#e43827] transition-colors font-medium text-left"
-                                    >
-                                        {t.login}
-                                    </button>
-                                    <button
-                                        onClick={() => onShowAuth("login")}
-                                        className="bg-[#e43827] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ea6254] transition-colors w-full"
-                                    >
-                                        {t.demo}
-                                    </button>
-                                </>
-                            )}
+                            <Link
+                                href="/auth/login"
+                                className="text-gray-700 hover:text-[#e43827] transition-colors font-medium text-left"
+                            >
+                                {t.login}
+                            </Link>
+                            <Link
+                                href="/auth/login"
+                                className="bg-[#e43827] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#ea6254] transition-colors w-full"
+                            >
+                                {t.demo}
+                            </Link>
                         </div>
                     </div>
                 )}
