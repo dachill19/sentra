@@ -22,13 +22,13 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ language }) => {
                     icon: AlertTriangle,
                     title: "Risiko Gagal Bayar & Fraud",
                     description:
-                        "Tanpa gambaran 360 derajat, bisnis Anda rentan terhadap pinjaman berisiko tinggi dan penipuan identitas yang semakin canggih.",
+                        "Tanpa gambaran menyeluruh, bisnis Anda rentan terhadap pinjaman berisiko tinggi dan penipuan identitas yang semakin canggih.",
                 },
                 {
                     icon: Shield,
-                    title: "Proses KYC yang Mahal & Berulang",
+                    title: "Kurangnya Data Kredit yang Real Time & Akurat",
                     description:
-                        "Proses verifikasi identitas yang manual dan berulang kali tidak hanya memakan biaya operasional, tetapi juga menciptakan friksi bagi pelanggan Anda.",
+                        "Data kredit yang tersedia memiliki sela waktu pembaruan yang cukup panjang, membuat data tersebut kurang relevan sehingga resiko NPL (Non Performing Loan) tetap tinggi.",
                 },
             ],
         },
@@ -45,13 +45,13 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ language }) => {
                     icon: AlertTriangle,
                     title: "Default Risk & Fraud",
                     description:
-                        "Without a 360-degree view, your business is vulnerable to high-risk loans and increasingly sophisticated identity fraud.",
+                        "Without a comprehensive view, your business is vulnerable to high-risk loans and increasingly sophisticated identity fraud.",
                 },
                 {
                     icon: Shield,
-                    title: "Expensive & Repetitive KYC",
+                    title: "Lack of Real-Time & Accurate Credit Data",
                     description:
-                        "Manual and repetitive identity verification processes not only consume operational costs but also create friction for your customers.",
+                        "Available credit data has long update intervals, making it less relevant and keeping NPL (Non Performing Loan) risk high.",
                 },
             ],
         },

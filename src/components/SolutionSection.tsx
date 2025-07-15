@@ -10,48 +10,48 @@ interface SolutionSectionProps {
 const SolutionSection: React.FC<SolutionSectionProps> = ({ language }) => {
     const content = {
         id: {
-            title: "Sentra: Satu API, Tiga Kekuatan Utama untuk Bisnis Anda",
+            title: "Satu Ekosistem, 3 Kekuatan Utama untuk Ekonomi Indonesia",
             solutions: [
                 {
                     icon: Brain,
                     title: "Skor Kredit Prediktif Berbasis AI",
                     description:
-                        "Tinggalkan penilaian tradisional. Model AI kami menganalisis ratusan variabel secara real-time untuk memberikan skor kredit yang dinamis dan akurat. Buat keputusan pinjaman yang lebih cerdas, lebih cepat, dan dengan risiko lebih rendah.",
+                        "Tinggalkan penilaian tradisional. Model AI kami menganalisis variabel secara real-time untuk memberikan skor kredit yang dinamis dan akurat. Buat keputusan pinjaman yang lebih cerdas, lebih cepat, dan dengan risiko lebih rendah.",
                 },
                 {
                     icon: Fingerprint,
                     title: "Identitas Digital Aman dengan Soul-Bound Token (SBT)",
                     description:
-                        "Revolusi proses KYC Anda. Dengan teknologi blockchain, kami menciptakan identitas digital tunggal (Satu NIK = Satu Wallet) yang terverifikasi, tidak dapat dipindahtangankan, dan portabel. Hilangkan risiko pemalsuan dan berikan pengalaman onboarding yang mulus bagi pelanggan.",
+                        "Reputasi kredit digital yang revolusioner. Dengan teknologi blockchain, kami menciptakan identitas digital tunggal (Satu NIK = Satu Wallet) yang terverifikasi, tidak dapat dipindahtangankan, dan portabel. Hilangkan risiko pemalsuan dan berikan pengalaman onboarding yang mulus bagi pelanggan.",
                 },
                 {
                     icon: Network,
                     title: "Ekosistem Data Terpadu & Transparan",
                     description:
-                        "Dapatkan gambaran utuh riwayat transaksi pengguna di seluruh platform mitra kami. Analisis data yang kaya ini memungkinkan Anda untuk mengelola risiko secara proaktif dan menawarkan produk yang lebih personal.",
+                        "Dapatkan gambaran utuh riwayat transaksi pengguna di seluruh platform mitra kami. Analisis data yang kaya, memungkinkan anda mengelola risiko secara proaktif dan menawarkan produk yang lebih personal.",
                 },
             ],
         },
         en: {
-            title: "Sentra: One API, Three Core Powers for Your Business",
+            title: "One Ecosystem, 3 Core Powers for Indonesia's Economy",
             solutions: [
                 {
                     icon: Brain,
                     title: "AI-Based Predictive Credit Scoring",
                     description:
-                        "Leave traditional assessments behind. Our AI model analyzes hundreds of variables in real-time to provide dynamic and accurate credit scores. Make smarter, faster lending decisions with lower risk.",
+                        "Leave traditional assessments behind. Our AI model analyzes variables in real-time to provide dynamic and accurate credit scores. Make smarter, faster lending decisions with lower risk.",
                 },
                 {
                     icon: Fingerprint,
                     title: "Secure Digital Identity with Soul-Bound Token (SBT)",
                     description:
-                        "Revolutionize your KYC process. With blockchain technology, we create a single digital identity (One NIK = One Wallet) that is verified, non-transferable, and portable. Eliminate forgery risks and provide seamless onboarding experience for customers.",
+                        "Revolutionary digital credit reputation. With blockchain technology, we create a single digital identity (One NIK = One Wallet) that is verified, non-transferable, and portable. Eliminate forgery risks and provide seamless onboarding experience for customers.",
                 },
                 {
                     icon: Network,
                     title: "Integrated & Transparent Data Ecosystem",
                     description:
-                        "Get a complete picture of user transaction history across all our partner platforms. This rich data analysis enables you to manage risk proactively and offer more personalized products.",
+                        "Get a complete picture of user transaction history across all our partner platforms. This rich data analysis, enables you to manage risk proactively and offer more personalized products.",
                 },
             ],
         },

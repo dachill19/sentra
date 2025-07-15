@@ -10,18 +10,17 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
     const content = {
         id: {
-            headline:
-                "Pusat Kredibilitas Digital Indonesia Terbaik untuk Bisnis Anda",
+            headline: "Pusat Kredibilitas Digital untuk Ekonomi Indonesia",
             description:
-                "Sentra adalah platform API terpadu yang memberdayakan bisnis Anda dengan skor kredit berbasis AI yang akurat dan identitas digital terdesentralisasi (SBT) yang aman. Kurangi risiko, percepat persetujuan, dan bangun kepercayaan di setiap transaksi.",
+                "Sentra adalah Platform Identitas dan reputasi kredit terpadu yang memberdayakan ekonomi Indonesia dengan skor kredit real time berbasis AI yang akurat dan identitas digital SBT yang unik untuk setiap user. Kurangi risiko, percepat persetujuan, dan bangun kepercayaan di setiap transaksi.",
             ctaPrimary: "Jadwalkan Demo Gratis",
             ctaSecondary: "Lihat Cara Kerja",
         },
         en: {
             headline:
-                "Indonesia's Premier Digital Credibility Hub for Your Business",
+                "Indonesia's Leading Digital Credibility Hub for Economic Empowerment",
             description:
-                "Sentra is a unified API platform that empowers your business with accurate AI-based credit scoring and secure decentralized digital identity (SBT). Reduce risk, accelerate approvals, and build trust in every transaction.",
+                "Sentra is a unified platform for credit reputation and digital identity, empowering Indonesia's economy through real-time AI credit scoring and unique SBT credentials. Reduce risk, speed up approvals, and foster trust at every step.",
             ctaPrimary: "Schedule Free Demo",
             ctaSecondary: "See How It Works",
         },
@@ -56,6 +55,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
                             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1C252C] leading-tight">
                                 {t.headline}
                             </h1>
+                            <h2 className="text-2xl lg:text-2xl font-semibold text-[#e43827] italic">
+                                “One Credit Identity for Everything”
+                            </h2>
                             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
                                 {t.description}
                             </p>

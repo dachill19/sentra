@@ -33,7 +33,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
             security: "Keamanan",
             compliance: "Kepatuhan",
             description:
-                "Platform API terpadu untuk skor kredit berbasis AI dan identitas digital terdesentralisasi yang aman.",
+                "Platform identitas dan reputasi terpadu untuk skor kredit berbasis AI dan identitas digital terdesentrasil yang aman.",
             rights: "Hak Cipta Dilindungi.",
             address: "Jakarta, Indonesia",
         },
@@ -59,7 +59,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
             security: "Security",
             compliance: "Compliance",
             description:
-                "Unified API platform for AI-based credit scoring and secure decentralized digital identity.",
+                "Unified identity and reputation platform for AI-powered credit scoring and secure decentralized digital identity.",
             rights: "All Rights Reserved.",
             address: "Jakarta, Indonesia",
         },
