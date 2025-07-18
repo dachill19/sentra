@@ -13,15 +13,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
             headline: "Pusat Kredibilitas Digital untuk Ekonomi Indonesia",
             description:
                 "Sentra adalah Platform Identitas dan reputasi kredit terpadu yang memberdayakan ekonomi Indonesia dengan skor kredit real time berbasis AI yang akurat dan identitas digital SBT yang unik untuk setiap user. Kurangi risiko, percepat persetujuan, dan bangun kepercayaan di setiap transaksi.",
-            ctaPrimary: "Jadwalkan Demo Gratis",
+            ctaPrimary: "Jadilah Mitra Kami",
             ctaSecondary: "Lihat Cara Kerja",
         },
         en: {
-            headline:
-                "Indonesia's Leading Digital Credibility Hub for Economic Empowerment",
+            headline: "Digital Credibility Hub for Indonesia's Economy",
             description:
-                "Sentra is a unified platform for credit reputation and digital identity, empowering Indonesia's economy through real-time AI credit scoring and unique SBT credentials. Reduce risk, speed up approvals, and foster trust at every step.",
-            ctaPrimary: "Schedule Free Demo",
+                "Sentra is a unified platform for credit reputation and digital identity, empowering Indonesia's economy through real-time AI credit scoring and unique SBT credentials. Reduce risk, speed up approvals, and foster trust at every transaction.",
+            ctaPrimary: "Become Our Partner",
             ctaSecondary: "See How It Works",
         },
     };
@@ -90,92 +89,113 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
                     </div>
 
                     {/* Right Visual */}
-                    <div className="relative">
-                        <div className="relative z-10">
-                            {/* Abstract Network Visualization */}
-                            <div className="w-full h-96 bg-gradient-to-br from-[#f08c81]/20 to-[#ea6254]/30 rounded-3xl p-8 backdrop-blur-sm">
-                                <div className="relative w-full h-full">
-                                    {/* Central Node */}
-                                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#e43827] rounded-full shadow-lg animate-pulse"></div>
-
-                                    {/* Surrounding Nodes */}
-                                    <div
-                                        className="absolute top-1/4 left-1/4 w-8 h-8 bg-[#ea6254] rounded-full shadow-md animate-bounce"
-                                        style={{ animationDelay: "0.5s" }}
-                                    ></div>
-                                    <div
-                                        className="absolute top-1/4 right-1/4 w-6 h-6 bg-[#f08c81] rounded-full shadow-md animate-bounce"
-                                        style={{ animationDelay: "1s" }}
-                                    ></div>
-                                    <div
-                                        className="absolute bottom-1/4 left-1/3 w-10 h-10 bg-[#ea6254] rounded-full shadow-md animate-bounce"
-                                        style={{ animationDelay: "1.5s" }}
-                                    ></div>
-                                    <div
-                                        className="absolute bottom-1/3 right-1/4 w-7 h-7 bg-[#f08c81] rounded-full shadow-md animate-bounce"
-                                        style={{ animationDelay: "2s" }}
-                                    ></div>
-
-                                    {/* Connection Lines */}
-                                    <svg
-                                        className="absolute inset-0 w-full h-full"
-                                        viewBox="0 0 100 100"
-                                        aria-hidden="true"
+                    <div className="relative w-full h-96 bg-gradient-to-br from-[#f08c81]/20 to-[#ea6254]/30 rounded-3xl p-8 backdrop-blur-sm overflow-hidden">
+                        <div className="relative w-full h-full">
+                            {/* Wave Background */}
+                            <div className="absolute inset-0 opacity-30">
+                                <svg
+                                    width="100%"
+                                    height="100%"
+                                    viewBox="0 0 400 300"
+                                >
+                                    <path
+                                        d="M0,150 Q100,50 200,150 T400,150"
+                                        stroke="#ea6254"
+                                        strokeWidth="2"
+                                        fill="none"
+                                        opacity="0.6"
                                     >
-                                        <line
-                                            x1="50"
-                                            y1="50"
-                                            x2="25"
-                                            y2="25"
-                                            stroke="#ea6254"
-                                            strokeWidth="0.5"
-                                            opacity="0.6"
-                                            className="animate-pulse"
+                                        <animate
+                                            attributeName="d"
+                                            values="M0,150 Q100,50 200,150 T400,150;M0,150 Q100,250 200,150 T400,150;M0,150 Q100,50 200,150 T400,150"
+                                            dur="4s"
+                                            repeatCount="indefinite"
                                         />
-                                        <line
-                                            x1="50"
-                                            y1="50"
-                                            x2="75"
-                                            y2="25"
-                                            stroke="#ea6254"
-                                            strokeWidth="0.5"
-                                            opacity="0.6"
-                                            className="animate-pulse"
+                                    </path>
+                                    <path
+                                        d="M0,100 Q100,200 200,100 T400,100"
+                                        stroke="#f08c81"
+                                        strokeWidth="2"
+                                        fill="none"
+                                        opacity="0.4"
+                                    >
+                                        <animate
+                                            attributeName="d"
+                                            values="M0,100 Q100,200 200,100 T400,100;M0,100 Q100,0 200,100 T400,100;M0,100 Q100,200 200,100 T400,100"
+                                            dur="3s"
+                                            repeatCount="indefinite"
                                         />
-                                        <line
-                                            x1="50"
-                                            y1="50"
-                                            x2="33"
-                                            y2="75"
-                                            stroke="#ea6254"
-                                            strokeWidth="0.5"
-                                            opacity="0.6"
-                                            className="animate-pulse"
+                                    </path>
+                                    <path
+                                        d="M0,200 Q100,100 200,200 T400,200"
+                                        stroke="#ea6254"
+                                        strokeWidth="2"
+                                        fill="none"
+                                        opacity="0.5"
+                                    >
+                                        <animate
+                                            attributeName="d"
+                                            values="M0,200 Q100,100 200,200 T400,200;M0,200 Q100,300 200,200 T400,200;M0,200 Q100,100 200,200 T400,200"
+                                            dur="5s"
+                                            repeatCount="indefinite"
                                         />
-                                        <line
-                                            x1="50"
-                                            y1="50"
-                                            x2="75"
-                                            y2="67"
-                                            stroke="#ea6254"
-                                            strokeWidth="0.5"
-                                            opacity="0.6"
-                                            className="animate-pulse"
-                                        />
-                                    </svg>
+                                    </path>
+                                </svg>
+                            </div>
+
+                            {/* Central Neural Hub */}
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-[#e43827] via-[#ea6254] to-[#f08c81] rounded-full shadow-2xl">
+                                <div
+                                    className="absolute inset-3 bg-white/20 rounded-full animate-spin"
+                                    style={{ animationDuration: "8s" }}
+                                >
+                                    <div
+                                        className="absolute inset-2 bg-white/30 rounded-full animate-spin"
+                                        style={{
+                                            animationDuration: "6s",
+                                            animationDirection: "reverse",
+                                        }}
+                                    >
+                                        <div
+                                            className="absolute inset-2 bg-white/40 rounded-full animate-spin"
+                                            style={{ animationDuration: "4s" }}
+                                        ></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Background Decoration */}
-                        <div
-                            className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-[#e43827]/10 to-[#f08c81]/10 rounded-full blur-3xl"
-                            aria-hidden="true"
-                        ></div>
-                        <div
-                            className="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-tr from-[#ea6254]/10 to-[#f08c81]/10 rounded-full blur-3xl"
-                            aria-hidden="true"
-                        ></div>
+                            {/* Orbiting Data Points */}
+                            <div
+                                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 animate-spin"
+                                style={{ animationDuration: "20s" }}
+                            >
+                                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#ea6254] rounded-full shadow-lg"></div>
+                                <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 w-6 h-6 bg-[#f08c81] rounded-full shadow-lg"></div>
+                                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-10 h-10 bg-[#ea6254] rounded-full shadow-lg"></div>
+                                <div className="absolute top-1/2 -left-4 transform -translate-y-1/2 w-7 h-7 bg-[#f08c81] rounded-full shadow-lg"></div>
+                            </div>
+
+                            {/* Secondary Orbit */}
+                            <div
+                                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 animate-spin"
+                                style={{
+                                    animationDuration: "15s",
+                                    animationDirection: "reverse",
+                                }}
+                            >
+                                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#ea6254] rounded-full shadow-md"></div>
+                                <div className="absolute top-1/2 -right-2 transform -translate-y-1/2 w-5 h-5 bg-[#f08c81] rounded-full shadow-md"></div>
+                                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#ea6254] rounded-full shadow-md"></div>
+                                <div className="absolute top-1/2 -left-2 transform -translate-y-1/2 w-4 h-4 bg-[#f08c81] rounded-full shadow-md"></div>
+                            </div>
+
+                            {/* Pulsing Outer Ring */}
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border-2 border-[#ea6254]/30 rounded-full animate-pulse"></div>
+                            <div
+                                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-[#f08c81]/20 rounded-full animate-pulse"
+                                style={{ animationDelay: "1s" }}
+                            ></div>
+                        </div>
                     </div>
                 </div>
             </div>

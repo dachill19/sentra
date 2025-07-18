@@ -76,7 +76,7 @@ const PartnershipSection: React.FC<PartnershipSectionProps> = ({
                     "Sentra complies with international security standards and local regulations to ensure your data is always safe and protected.",
                 certifications: {
                     iso: "ISO 27001",
-                    pdp: "GDPR Compliant",
+                    pdp: "UU PDP Compliant",
                     soc: "SOC 2 Type II",
                 },
                 features: [

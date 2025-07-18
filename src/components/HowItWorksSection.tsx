@@ -72,7 +72,10 @@ const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ language }) => {
     const t = content[language];
 
     return (
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <section
+            id="how-it-works"
+            className="py-20 bg-gradient-to-br from-gray-50 to-white"
+        >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl lg:text-4xl font-bold text-[#1C252C] mb-6">

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, Calendar, Rocket } from "lucide-react";
 
 interface FinalCTASectionProps {
     language: "id" | "en";
@@ -17,13 +17,13 @@ const FinalCTASection: React.FC<FinalCTASectionProps> = ({
             title: "Tingkatkan Kredibilitas Bisnis Anda Hari Ini",
             description:
                 "Temukan bagaimana Sentra dapat merevolusi cara Anda mengelola risiko dan melayani pelanggan. Jadwalkan sesi demo personal tanpa komitmen dengan ahli kami.",
-            cta: "Minta Jadwal Demo",
+            cta: "Bergabung dengan Kami",
         },
         en: {
             title: "Enhance Your Business Credibility Today",
             description:
                 "Discover how Sentra can revolutionize the way you manage risk and serve customers. Schedule a personal demo session with no commitment from our experts.",
-            cta: "Request Demo Schedule",
+            cta: "Join Us",
         },
     };
 
@@ -51,7 +51,7 @@ const FinalCTASection: React.FC<FinalCTASectionProps> = ({
                             onClick={handleDemoClick}
                             className="bg-[#e43827] text-white px-12 py-6 rounded-2xl font-bold text-lg hover:bg-[#ea6254] transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-xl"
                         >
-                            <Calendar
+                            <BriefcaseBusiness
                                 size={24}
                                 className="mr-3 group-hover:scale-110 transition-transform"
                             />

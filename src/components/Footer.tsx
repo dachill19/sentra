@@ -78,8 +78,8 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                                 src="/sentra-logo.png"
                                 alt="Sentra"
                                 width={120}
-                                height={32}
-                                className="h-8 w-auto mb-4 brightness-0 invert"
+                                height={48}
+                                className="h-12 w-auto mb-4 brightness-0 invert"
                                 priority
                             />
                             <p className="text-gray-300 leading-relaxed max-w-md">

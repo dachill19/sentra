@@ -17,17 +17,17 @@ const Navbar: React.FC<NavbarProps> = ({ language, onLanguageChange }) => {
         id: {
             features: "Fitur",
             solutions: "Solusi",
-            pricing: "Harga",
+            faq: "FAQ",
             docs: "Dokumentasi API",
-            demo: "Jadwalkan Demo",
+            demo: "Daftar Sekarang",
             login: "Masuk",
         },
         en: {
             features: "Features",
             solutions: "Solutions",
-            pricing: "Pricing",
+            faq: "FAQ",
             docs: "API Documentation",
-            demo: "Schedule Demo",
+            demo: "Sign Up Now",
             login: "Login",
         },
     };
@@ -83,11 +83,11 @@ const Navbar: React.FC<NavbarProps> = ({ language, onLanguageChange }) => {
                             {t.solutions}
                         </a>
                         <a
-                            href="#pricing"
-                            onClick={(e) => handleSmoothScroll(e, "pricing")}
+                            href="#faq"
+                            onClick={(e) => handleSmoothScroll(e, "faq")}
                             className="text-gray-700 hover:text-[#e43827] transition-colors font-medium cursor-pointer"
                         >
-                            {t.pricing}
+                            {t.faq}
                         </a>
                         <a
                             href="#docs"
@@ -174,13 +174,11 @@ const Navbar: React.FC<NavbarProps> = ({ language, onLanguageChange }) => {
                                 {t.solutions}
                             </a>
                             <a
-                                href="#pricing"
-                                onClick={(e) =>
-                                    handleSmoothScroll(e, "pricing")
-                                }
+                                href="#faq"
+                                onClick={(e) => handleSmoothScroll(e, "faq")}
                                 className="text-gray-700 hover:text-[#e43827] transition-colors font-medium cursor-pointer"
                             >
-                                {t.pricing}
+                                {t.faq}
                             </a>
                             <a
                                 href="#docs"
